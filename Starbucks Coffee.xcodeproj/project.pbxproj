@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		8631D2BB28FD980E00B38B4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631D2BA28FD980E00B38B4B /* AppDelegate.swift */; };
 		8631D2BD28FD980E00B38B4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631D2BC28FD980E00B38B4B /* SceneDelegate.swift */; };
-		8631D2BF28FD980E00B38B4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631D2BE28FD980E00B38B4B /* ViewController.swift */; };
 		8631D2C228FD980E00B38B4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8631D2C028FD980E00B38B4B /* Main.storyboard */; };
 		8631D2C428FD981000B38B4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8631D2C328FD981000B38B4B /* Assets.xcassets */; };
 		8631D2C728FD981000B38B4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8631D2C528FD981000B38B4B /* LaunchScreen.storyboard */; };
+		8631D2D028FD99CB00B38B4B /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631D2CF28FD99CB00B38B4B /* OrdersTableViewController.swift */; };
+		8631D2D228FD9A0100B38B4B /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631D2D128FD9A0100B38B4B /* AddOrderViewController.swift */; };
+		8631D2D528FDA14400B38B4B /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631D2D428FDA14400B38B4B /* WebServices.swift */; };
+		8631D2D828FDA38C00B38B4B /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631D2D728FDA38C00B38B4B /* Order.swift */; };
+		8631D2DB28FDA71D00B38B4B /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631D2DA28FDA71D00B38B4B /* OrderViewModel.swift */; };
+		8631D2DD28FDAC6800B38B4B /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8631D2DC28FDAC6800B38B4B /* AddCoffeeOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8631D2B728FD980E00B38B4B /* Starbucks Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Starbucks Coffee.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8631D2BA28FD980E00B38B4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8631D2BC28FD980E00B38B4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8631D2BE28FD980E00B38B4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8631D2C128FD980E00B38B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8631D2C328FD981000B38B4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8631D2C628FD981000B38B4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8631D2C828FD981000B38B4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8631D2CF28FD99CB00B38B4B /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		8631D2D128FD9A0100B38B4B /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
+		8631D2D428FDA14400B38B4B /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		8631D2D728FDA38C00B38B4B /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		8631D2DA28FDA71D00B38B4B /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
+		8631D2DC28FDAC6800B38B4B /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		8631D2B928FD980E00B38B4B /* Starbucks Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				8631D2D928FDA70C00B38B4B /* View Models */,
+				8631D2D628FDA37B00B38B4B /* Models */,
+				8631D2D328FDA13900B38B4B /* Services */,
+				8631D2CE28FD988500B38B4B /* Controllers */,
 				8631D2BA28FD980E00B38B4B /* AppDelegate.swift */,
 				8631D2BC28FD980E00B38B4B /* SceneDelegate.swift */,
-				8631D2BE28FD980E00B38B4B /* ViewController.swift */,
 				8631D2C028FD980E00B38B4B /* Main.storyboard */,
 				8631D2C328FD981000B38B4B /* Assets.xcassets */,
 				8631D2C528FD981000B38B4B /* LaunchScreen.storyboard */,
 				8631D2C828FD981000B38B4B /* Info.plist */,
 			);
 			path = "Starbucks Coffee";
+			sourceTree = "<group>";
+		};
+		8631D2CE28FD988500B38B4B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8631D2CF28FD99CB00B38B4B /* OrdersTableViewController.swift */,
+				8631D2D128FD9A0100B38B4B /* AddOrderViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8631D2D328FDA13900B38B4B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8631D2D428FDA14400B38B4B /* WebServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8631D2D628FDA37B00B38B4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8631D2D728FDA38C00B38B4B /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8631D2D928FDA70C00B38B4B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				8631D2DA28FDA71D00B38B4B /* OrderViewModel.swift */,
+				8631D2DC28FDAC6800B38B4B /* AddCoffeeOrderViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8631D2BF28FD980E00B38B4B /* ViewController.swift in Sources */,
+				8631D2D828FDA38C00B38B4B /* Order.swift in Sources */,
+				8631D2DD28FDAC6800B38B4B /* AddCoffeeOrderViewModel.swift in Sources */,
 				8631D2BB28FD980E00B38B4B /* AppDelegate.swift in Sources */,
+				8631D2D528FDA14400B38B4B /* WebServices.swift in Sources */,
 				8631D2BD28FD980E00B38B4B /* SceneDelegate.swift in Sources */,
+				8631D2D028FD99CB00B38B4B /* OrdersTableViewController.swift in Sources */,
+				8631D2DB28FDA71D00B38B4B /* OrderViewModel.swift in Sources */,
+				8631D2D228FD9A0100B38B4B /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
